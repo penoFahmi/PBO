@@ -1,26 +1,21 @@
 public class TugasJava1 {
     public static void main(String[] args) {
+
         // Soal 1
-        // Deklarasi awal
-        int lembar_kertas_mesin1 = 100;
-        int lembar_kertas_mesin2 = 200;
-
-        // Penambahan kertas setiap jam
-        int lembar_tambahan_per_jam = 50;
-
-        // Penghitungan kertas setiap dua jam
-        int kertas_setiap_dua_jam = 100;
+        //Deklarasi
+        int lembarKertasMesin1 = 100;
+        int lembarKertasMesin2 = 200;
+        int tambahKertasPerJam = 50;
+        int cetakKertasSetiap2Jam = 100;
 
         // Perhitungan kertas pada jam kelima
         int jam = 5;
-        int total_lembar_mesin1 = lembar_kertas_mesin1 + (jam - 1) * lembar_tambahan_per_jam;
-        int total_lembar_mesin2 = lembar_kertas_mesin2 + (jam - 1) * lembar_tambahan_per_jam;
-        int sisa_kertas_mesin1 = total_lembar_mesin1 - (jam / 2) * kertas_setiap_dua_jam;
-        int sisa_kertas_mesin2 = total_lembar_mesin2 - (jam / 2) * kertas_setiap_dua_jam;
-
-        // Menampilkan sisa kertas pada kedua mesin pada jam kelima
-        System.out.println("Sisa kertas pada mesin pertama pada jam kelima: " + sisa_kertas_mesin1);
-        System.out.println("Sisa kertas pada mesin kedua pada jam kelima: " + sisa_kertas_mesin2);
+        int totalLembarMesin1 = lembarKertasMesin1 + (jam - 1) * tambahKertasPerJam;
+        int totalLembarMesin2 = lembarKertasMesin2 + (jam - 1) * tambahKertasPerJam;
+        int sisaKertasMesin1 = totalLembarMesin1 - (jam / 2) * cetakKertasSetiap2Jam;
+        int sisaKertasMesin2 = totalLembarMesin2 - (jam / 2) * cetakKertasSetiap2Jam;
+        System.out.println("Sisa kertas pada mesin pertama : " + sisaKertasMesin1);
+        System.out.println("Sisa kertas pada mesin kedua: " + sisaKertasMesin2);
 
         // Soal 2
         // Jumlah buku yang dibaca setiap minggu
