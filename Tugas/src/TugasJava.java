@@ -4,7 +4,7 @@ public class TugasJava {
         int mesin2_awal = 200;
         int tambah_per_jam = 50;
         int cetak_per_jam = 100;
-        int jam = 5; // Jam yang telah berlalu
+        int jam = 5;
 
         int total_kertas = mesin1_awal + mesin2_awal + (tambah_per_jam * jam);
         int kali_cetak = jam / 2;
