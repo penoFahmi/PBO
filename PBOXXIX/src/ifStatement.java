@@ -1,8 +1,8 @@
 public class ifStatement {
     public static void main(String[] args) {
         //IF Statement
-        if (true) {
-            System.out.println("");
+        if (false) {
+            System.out.println("Kode di baris ini dieksekusi");
         }
 
         boolean hariIniHujan = false;
@@ -21,5 +21,62 @@ public class ifStatement {
         if (sayaSukaDia == diaSukaSaya)  {
             System.out.println("Kami jadian");
         }
+
+        byte jumlahBeli = 10;
+        float diskon;
+        if (jumlahBeli >= 10) {
+            diskon = .1f;
+            float jumlahBayar = (jumlahBeli * 100000) - (jumlahBeli * 100000 * diskon);
+            System.out.println(jumlahBayar);
+        }
+
+        byte jumlahPesanan = 10;
+        boolean bungkus = false;
+        int hargaPesanan = 100000;
+        float diskonPesanan = .25f;
+        if (jumlahPesanan > 3) {
+            if (bungkus) {
+                float jumlahBayar = (jumlahPesanan * hargaPesanan) - (jumlahPesanan * hargaPesanan * diskonPesanan);
+                System.out.println(jumlahBayar);
+            }
+        }
+
+        boolean adaMakul =true;
+        if (adaMakul == false) {
+            System.out.println("Yuk, ke kampus");
+        } else {
+            System.out.println("Kita mabar di reformasi");
+        }
+
+        char nilaiPBO = 'A';
+        if (nilaiPBO == 'A') {
+            System.out.println("Luar biasa");
+        } else if (nilaiPBO == 'B'){
+            System.out.println("Bagus sekali");
+        } else if (nilaiPBO == 'C'){
+            System.out.println("Cukup");
+        } else if (nilaiPBO == 'D'){
+            System.out.println("Kurang");
+        } else if (nilaiPBO == 'E'){
+            System.out.println("Gagal");
+        } else {
+            System.out.println("Error! Masukan huruf nilai yang benar");
+        }
+
+        //Peno
+        int jarakTempuh = 50000;
+        if (jarakTempuh > 5000) {
+            System.out.println("Silahkan servis motor anda!");
+        } else if (jarakTempuh < 5000) {
+            System.out.println("Tidak perlu servis motor anda!");
+        }
+
+        boolean oliKering = true;
+        if (oliKering == true) {
+            System.out.println("Silahkan ganti oli anda!");
+        } else {
+            System.out.println("Tidak perlu ganti oli!");
+        }
+
     }
 }
