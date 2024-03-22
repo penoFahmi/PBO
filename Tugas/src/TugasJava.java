@@ -1,4 +1,4 @@
-public class TugasJava1 {
+public class TugasJava {
     public static void main(String[] args) {
 
         // Soal 1
