@@ -1,8 +1,8 @@
-public class TugasIfStatetment {
+public class TugasControlFlow {
     public static void main(String[] args) {
 
         //Soal 1
-        int usiaAni = 17;
+        int usiaAni = 15;
         boolean punyaKTP = true;
         if (usiaAni >= 17) {
             System.out.println("Ani punya KTP " + punyaKTP);
