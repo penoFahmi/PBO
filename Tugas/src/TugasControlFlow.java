@@ -11,7 +11,23 @@ public class TugasControlFlow {
         }
 
         //Soal 2
+        int bilanganBulat = 7;
+        if (bilanganBulat % 2 == 0) {
+            System.out.println("Bilangan genap");
+        } else {
+            System.out.println("Ini bilangan ganjil");
+        }
+
         //Soal 3
+        int hargaBarang = 150000;
+        int jumlahBeli = 10;
+        int total = hargaBarang * jumlahBeli;
+        if ( total > 0) {
+            System.out.println("Total belanja kamu adalah : " + total);
+        } else {
+            System.out.println("mohon beli dulu barang yang ada");
+        }
+
         //Soal 4
         //Soal 5
     }
