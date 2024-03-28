@@ -78,5 +78,39 @@ public class ifStatement {
             System.out.println("Tidak perlu ganti oli!");
         }
 
+        //tenary if
+        byte nilaiAngkaPBO = 70;
+        String keputusanMakul= ( nilaiAngkaPBO >= 50) ? "Lulus" : "Gagal";
+        System.out.println("PBO" + keputusanMakul);
+
+        boolean punyaKTP = false;
+        int kemungkinanUsia = (punyaKTP) ? 17 : 16;
+        System.out.println("Kemungkinan usia yang punya : " + kemungkinanUsia);
+
+        boolean punyaMobil = false;
+        boolean dariKeluargaMenengahKebawah = (punyaMobil) ? false : true;
+        System.out.println("Dari keluarga menengah kebawah : " + dariKeluargaMenengahKebawah);
+
+        char nilaiHurufPWL = 'A';
+        switch (nilaiHurufPWL) {
+            case 'A' :
+                System.out.println("Sempurna");
+                break;
+            case 'B' :
+                System.out.println("Baik");
+                break;
+            case 'C' :
+                System.out.println("Cukup");
+                break;
+            case 'D' :
+                System.out.println("Kurang");
+                break;
+            case 'E' :
+                System.out.println("Gagal");
+                break;
+            default :
+                System.out.println("Huruf Salah");
+        }
+
     }
 }
