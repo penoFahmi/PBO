@@ -5,7 +5,6 @@ public class TugasPerulangan {
         for (int i = 5; i <= 15; i += 2) {
             System.out.print(i + " ");
         }
-        System.out.println();
 
         // Soal 2
         int totalJumlah = 0;
