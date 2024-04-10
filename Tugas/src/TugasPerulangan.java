@@ -35,11 +35,11 @@ public class TugasPerulangan {
                 fpb = i;
             }
         }
-        System.out.println("Faktor Persekutuan Terbesar dari 20 dan 30 adalah " + fpb);
+        System.out.println("Faktor Persekutuan Terbesar dari 20 dan 30 adalah : " + fpb);
         System.out.println();
 
         // Saol 5
         int kpk = (duaPuluh * tigaPuluh) / fpb;
-        System.out.println("Kelipatan Persekutuan Terkecil dari 20 dan 30 adalah " + kpk);
+        System.out.println("Kelipatan Persekutuan Terkecil dari 20 dan 30 adalah : " + kpk);
     }
 }
