@@ -20,6 +20,14 @@ public class App {
         arisHouse.isCredit = true;
         System.out.println(arisHouse.getPrice());
 
+        House fiddyHouse = new House();
+        System.out.println(fiddyHouse.houseNumber);
+        System.out.println(fiddyHouse.numberOFRooms);
+        System.out.println(fiddyHouse.landArea);
+
+        House sitiHouse = new House("Siti Putri Anggraini");
+        System.out.println(sitiHouse.owner);
+
         Motor motorPCX = new Motor();
         motorPCX.jenis = "Matic";
         motorPCX.merk = "Yamaha";

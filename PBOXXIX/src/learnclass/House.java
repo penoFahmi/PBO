@@ -7,6 +7,18 @@ public class House {
     int landArea;
     int price;
     boolean isCredit;
+    String owner;
+
+    //NO argument constructor atau zero argument constructor
+    House () {
+        System.out.println("===========");
+        System.out.println("Denah Rumah");
+        System.out.println("===========");
+    }
+
+    House(String owner) {
+        this.owner = owner;
+    }
 
     int getPrice() {
         if (isCredit) {
