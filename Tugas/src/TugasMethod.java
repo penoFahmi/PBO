@@ -1,6 +1,6 @@
 public class TugasMethod {
     public static void main(String[] args) {
-        // Contoh penggunaan method
+        // Deklarasi Method
         int angka1 = 5;
         int angka2 = 8;
         int angka3 = 9;
@@ -16,7 +16,7 @@ public class TugasMethod {
         System.out.println("Nilai mean: " + mean + " total: " + total + " min: " + min + " max: " + max);
 
         int hari = 1;
-        System.out.println("Hari ke-" + hari + " adalah " + getDayName(hari));
+        System.out.println("Hari ke-" + hari + " adalah " + getNamaHari(hari));
 
         int angka = 12345;
         System.out.println("Angka " + angka + " setelah dibalik: " + reverseNumber(angka));
@@ -60,9 +60,9 @@ public class TugasMethod {
         return Math.max(Math.max(num1, num2), num3);
     }
 
-    // Method untuk mendapatkan nama hari berdasarkan angka 1-7
-    public static String getDayName(int day) {
-        switch (day) {
+    // 4. Menampilkan nama hari berdasarkan angka 1-7. Misal: input 1 output Senin.
+    public static String getNamaHari(int hari) {
+        switch (hari) {
             case 1:
                 return "Senin";
             case 2:
@@ -82,14 +82,14 @@ public class TugasMethod {
         }
     }
 
-    // Method untuk memutarbalikkan angka
+    // 5. Memutarbalikkan angka. Misal: input 12345 output 54321.
     public static int reverseNumber(int number) {
-        int reversed = 0;
+        int balik = 0;
         while (number != 0) {
             int digit = number % 10;
-            reversed = reversed * 10 + digit;
+            balik = balik * 10 + digit;
             number /= 10;
         }
-        return reversed;
+        return balik;
     }
 }
