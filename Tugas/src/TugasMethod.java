@@ -1,16 +1,17 @@
 public class TugasMethod {
     public static void main(String[] args) {
         // Deklarasi Method
+        int angka8 = 8;
+        int angka44 = 44;
+
+        System.out.println("Soal nomor 1");
+        System.out.println("Apakah " + angka8 + " bilangan prima? " + (isPrima(angka8) ? "Ya" : "Tidak"));
+        System.out.println("Soal nomor 2");
+        System.out.println("Total digit dari " + angka44 + " adalah " + countDigits(angka44));
+
         int angka1 = 5;
         int angka2 = 8;
         int angka3 = 9;
-        int angka4 = 44;
-
-        System.out.println("Soal nomor 1");
-        System.out.println("Apakah " + angka2 + " bilangan prima? " + (isPrima(angka2) ? "Ya" : "Tidak"));
-        System.out.println("Soal nomor 2");
-        System.out.println("Total digit dari " + angka4 + " adalah " + countDigits(angka4));
-
         double mean = calculateMean(angka1, angka2, angka3);
         int total = calculateTotal(angka1, angka2, angka3);
         int min = findMin(angka1, angka2, angka3);
