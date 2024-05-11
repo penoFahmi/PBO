@@ -4,9 +4,10 @@ public class TugasMethod {
         int angka1 = 5;
         int angka2 = 8;
         int angka3 = 9;
+        int angka4 = 44;
 
-        System.out.println("Apakah " + angka1 + " bilangan prima? " + (isPrime(angka1) ? "Ya" : "Tidak"));
-        System.out.println("Total digit dari " + angka1 + " adalah " + countDigits(angka1));
+        System.out.println("Apakah " + angka2 + " bilangan prima? " + (isPrime(angka1) ? "Ya" : "Tidak"));
+        System.out.println("Total digit dari " + angka4 + " adalah " + countDigits(angka4));
 
         double mean = calculateMean(angka1, angka2, angka3);
         int total = calculateTotal(angka1, angka2, angka3);
