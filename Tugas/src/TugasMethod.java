@@ -17,7 +17,10 @@ public class TugasMethod {
         int max = findMax(angka1, angka2, angka3);
 
         System.out.println("Soal nomor 3");
-        System.out.println("Nilai mean: " + mean + " total: " + total + " min: " + min + " max: " + max);
+        System.out.println("Nilai mean: " + mean );
+        System.out.println(" total: " + total );
+        System.out.println(" min: " + min);
+        System.out.println(" max: " + max);
 
         System.out.println("Soal nomor 4");
         int hari = 1;
