@@ -18,9 +18,9 @@ public class TugasMethod {
 
         System.out.println("Soal nomor 3");
         System.out.println("Nilai mean: " + mean );
-        System.out.println(" total: " + total );
-        System.out.println(" min: " + min);
-        System.out.println(" max: " + max);
+        System.out.println("Nilai total: " + total );
+        System.out.println("Nilai min: " + min);
+        System.out.println("Nilai max: " + max);
 
         System.out.println("Soal nomor 4");
         int hari = 1;
@@ -31,22 +31,22 @@ public class TugasMethod {
         System.out.println("Angka " + angka + " setelah dibalik: " + balikAngka(angka));
     }
 
-    // Method untuk menentukan apakah sebuah angka merupakan bilangan prima
-    public static boolean isPrima(int number) {
-        if (number <= 1) {
+    // 1. Menentukan apakah sebuah angka merupakan bilangan prima. Misal: input 8 output bukan bilangan prima.
+    public static boolean isPrima(int angka) {
+        if (angka <= 1) {
             return false;
         }
-        for (int i = 2; i <= Math.sqrt(number); i++) {
-            if (number % i == 0) {
+        for (int i = 2; i <= Math.sqrt(angka); i++) {
+            if (angka % i == 0) {
                 return false;
             }
         }
         return true;
     }
 
-    // Method untuk menghitung total digit suatu bilangan
-    public static int countDigits(int number) {
-        return String.valueOf(number).length();
+    // 2. Menghitung total digit suatu bilangan. Misal: input 44 output 8.
+    public static int countDigits(int bilangan) {
+        return String.valueOf(bilangan).length();
     }
 
     // Method untuk menghitung nilai mean dari tiga angka
