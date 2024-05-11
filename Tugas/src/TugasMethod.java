@@ -6,7 +6,7 @@ public class TugasMethod {
         int angka3 = 9;
         int angka4 = 44;
 
-        System.out.println("Apakah " + angka2 + " bilangan prima? " + (isPrime(angka1) ? "Ya" : "Tidak"));
+        System.out.println("Apakah " + angka2 + " bilangan prima? " + (isPrima(angka2) ? "Ya" : "Tidak"));
         System.out.println("Total digit dari " + angka4 + " adalah " + countDigits(angka4));
 
         double mean = calculateMean(angka1, angka2, angka3);
@@ -24,7 +24,7 @@ public class TugasMethod {
     }
 
     // Method untuk menentukan apakah sebuah angka merupakan bilangan prima
-    public static boolean isPrime(int number) {
+    public static boolean isPrima(int number) {
         if (number <= 1) {
             return false;
         }
