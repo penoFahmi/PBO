@@ -20,7 +20,7 @@ public class TugasMethod {
         System.out.println("Hari ke-" + hari + " adalah " + getNamaHari(hari));
 
         int angka = 12345;
-        System.out.println("Angka " + angka + " setelah dibalik: " + reverseNumber(angka));
+        System.out.println("Angka " + angka + " setelah dibalik: " + balikAngka(angka));
     }
 
     // Method untuk menentukan apakah sebuah angka merupakan bilangan prima
@@ -61,7 +61,7 @@ public class TugasMethod {
         return Math.max(Math.max(num1, num2), num3);
     }
 
-    // 4. Menampilkan nama hari berdasarkan angka 1-7. Misal: input 1 output Senin.
+    // Menampilkan nama hari berdasarkan angka 1-7. Misal: input 1 output Senin.
     public static String getNamaHari(int hari) {
         switch (hari) {
             case 1:
@@ -83,13 +83,13 @@ public class TugasMethod {
         }
     }
 
-    // 5. Memutarbalikkan angka. Misal: input 12345 output 54321.
-    public static int reverseNumber(int number) {
+    // Memutarbalikkan angka. Misal: input 12345 output 54321.
+    public static int balikAngka(int angka) {
         int balik = 0;
-        while (number != 0) {
-            int digit = number % 10;
+        while (angka != 0) {
+            int digit = angka % 10;
             balik = balik * 10 + digit;
-            number /= 10;
+            angka /= 10;
         }
         return balik;
     }
