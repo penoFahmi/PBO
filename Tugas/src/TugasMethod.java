@@ -6,7 +6,9 @@ public class TugasMethod {
         int angka3 = 9;
         int angka4 = 44;
 
+        System.out.println("Soal nomor 1");
         System.out.println("Apakah " + angka2 + " bilangan prima? " + (isPrima(angka2) ? "Ya" : "Tidak"));
+        System.out.println("Soal nomor 2");
         System.out.println("Total digit dari " + angka4 + " adalah " + countDigits(angka4));
 
         double mean = calculateMean(angka1, angka2, angka3);
@@ -14,11 +16,14 @@ public class TugasMethod {
         int min = findMin(angka1, angka2, angka3);
         int max = findMax(angka1, angka2, angka3);
 
+        System.out.println("Soal nomor 3");
         System.out.println("Nilai mean: " + mean + " total: " + total + " min: " + min + " max: " + max);
 
+        System.out.println("Soal nomor 4");
         int hari = 1;
         System.out.println("Hari ke-" + hari + " adalah " + getNamaHari(hari));
 
+        System.out.println("Soal nomor 5");
         int angka = 12345;
         System.out.println("Angka " + angka + " setelah dibalik: " + balikAngka(angka));
     }
