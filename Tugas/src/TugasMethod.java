@@ -45,18 +45,15 @@ public class TugasMethod {
     public static double calculateMean(int num1, int num2, int num3) {
         return (num1 + num2 + num3) / 3.0;
     }
-
     // Method untuk menghitung total dari tiga angka
     public static int calculateTotal(int num1, int num2, int num3) {
         return num1 + num2 + num3;
     }
-
-    // Method untuk mencari nilai minimum dari tiga angka
+    // Method untuk mencari nilai mindari tiga angka
     public static int findMin(int num1, int num2, int num3) {
         return Math.min(Math.min(num1, num2), num3);
     }
-
-    // Method untuk mencari nilai maksimum dari tiga angka
+    // Method untuk mencari nilai max dari tiga angka
     public static int findMax(int num1, int num2, int num3) {
         return Math.max(Math.max(num1, num2), num3);
     }
