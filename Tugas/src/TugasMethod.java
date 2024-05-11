@@ -49,6 +49,14 @@ public class TugasMethod {
         return String.valueOf(bilangan).length();
     }
 
+    /*3. Menghitung nilai mean, total, min, dan max dari tiga angka.
+         Misal:
+         Input
+         Angka pertama: 5
+         Angka kedua: 8
+         Angka ketiga: 9
+         Output
+         Nilai mean: 7.3 total: 22 min:5 max: 8.*/
     // Method untuk menghitung nilai mean dari tiga angka
     public static double calculateMean(int num1, int num2, int num3) {
         return (num1 + num2 + num3) / 3.0;
