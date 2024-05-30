@@ -1,25 +1,32 @@
 package utsmath;
 
-public class Equation {
-    protected String equation;
-    protected double root1;
-    protected short degree;
-
-    public Equation(String equation, double root1, short degree) {
-        this.equation = equation;
-        this.root1 = root1;
-        this.degree = degree;
+public class Equation extends Algebra {
+    public Equation() {
+        super("Equation", 0.0, (short)0); // Default values
     }
 
-    public void showEquation() {
-        System.out.println("Equation: " + equation);
+    public Equation(String expression, double result, short variables) {
+        super(expression, result, variables);
     }
 
-    public void setRoot1(double root1) {
-        this.root1 = root1;
+    @Override
+    public void displayExpression() {
+        super.displayExpression();
+        System.out.println("This is an equation.");
     }
 
-    public double solve() {
-        return root1;
+    @Override
+    public void setExpression(String expression) {
+        super.setExpression(expression);
+    }
+
+    @Override
+    public double evaluateExpression(double x) {
+        double sum = 0;
+        do {
+            sum += x;
+            x--;
+        } while (x > 0);
+        return sum + result;
     }
 }
