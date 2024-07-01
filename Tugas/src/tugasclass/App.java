@@ -15,7 +15,6 @@ public class App {
         mahasiswa1.tampilkanInfo();
         mahasiswa1.tampilkanSisaMasaStudi();
         mahasiswa1.tampilkanPredikat();
-
         mahasiswa2.tampilkanInfo();
         mahasiswa2.tampilkanSisaMasaStudi();
         mahasiswa2.tampilkanPredikat();
