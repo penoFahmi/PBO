@@ -1,9 +1,9 @@
 package utsmath;
 
 public class Geometry {
-    protected String name;
-    protected double area;
-    protected short sides;
+    String name;
+    double area;
+    short sides;
 
     public Geometry(String name, double area, short sides) {
         this.name = name;

@@ -1,18 +1,18 @@
 package utsmath;
 
 public class Algebra {
-    protected String expression;
-    protected double result;
-    protected short variables;
+    String expression;
+    double value;
+    short variables;
 
-    public Algebra(String expression, double result, short variables) {
+    public Algebra(String expression, double value, short variables) {
         this.expression = expression;
-        this.result = result;
+        this.value = value;
         this.variables = variables;
     }
 
     public void displayExpression() {
-        System.out.println("Expression: " + expression + ", Result: " + result + ", Variables: " + variables);
+        System.out.println("Expression: " + expression + ", Value: " + value + ", Variables: " + variables);
     }
 
     public void setExpression(String expression) {
@@ -20,6 +20,6 @@ public class Algebra {
     }
 
     public double evaluateExpression(double x) {
-        return x + result;
+        return x + value;
     }
 }
